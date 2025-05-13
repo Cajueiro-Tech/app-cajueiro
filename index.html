@@ -1,11 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CajueiroTech</title>
+    <title>Cajueiro Tech - Transforme sua Ideia em Realidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="antialiased font-inter bg-gray-100 text-gray-900 leading-relaxed">
+
+    <header class="sticky top-0 z-50 shadow-md bg-gray-900 text-gray-100 py-3">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-teal-400">
+                Cajueiro<span class="text-white">Tech</span>
+            </a>
+            <nav class="hidden md:flex space-x-5 lg:space-x-7 items-center">
+                <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out text-teal-400 font-semibold">Início</a>
+                <a href="sobre.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out text-gray-100 hover:text-teal-400 hover:bg-white/5 focus:text-teal-400 focus:bg-white/5">Sobre Nós</a>
+                <a href="cursos.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out text-gray-100 hover:text-teal-400 hover:bg-white/5 focus:text-teal-400 focus:bg-white/5">Cursos</a>
+                <a href="contato.html" class="text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-300 ease-in-out shadow-sm bg-teal-400 text-gray-900 hover:bg-teal-300 transform hover:translate-y-[-2px] hover:shadow-lg focus:bg-teal-300">Entre em Contato</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none text-gray-100 hover:text-teal-400">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 shadow-lg border-t border-white/10">
+            <a href="index.html" class="block px-5 py-3 text-base font-medium transition-colors duration-200 text-teal-400 font-semibold">Início</a>
+            <a href="sobre.html" class="block px-5 py-3 text-base font-medium transition-colors duration-200 text-gray-100 hover:bg-teal-400/10 hover:text-teal-400">Sobre Nós</a>
+            <a href="cursos.html" class="block px-5 py-3 text-base font-medium transition-colors duration-200 text-gray-100 hover:bg-teal-400/10 hover:text-teal-400">Cursos</a>
+            <a href="contato.html" class="block w-full text-center mt-2 mb-3 mx-4 px-5 py-3 text-base font-semibold rounded-lg bg-teal-400 text-gray-900 hover:bg-teal-300 focus:bg-teal-300">Entre em Contato</a>
+        </div>
+    </header>
+
+    <section class="py-20 md:py-28 lg:py-36 text-center relative overflow-hidden bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tight">Cajueiro Tech</h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8 max-w-xl md:max-w-2xl mx-auto opacity-90">Capacitando empreendedores a transformar ideias em negócios de sucesso.</p>
+            <a href="cursos.html" class="text-base sm:text-lg font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg bg-teal-400 text-gray-900 hover:bg-teal-300 focus:bg-teal-300">Explore Nossos Cursos</a>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 lg:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-5 text-center tracking-tight text-gray-900">Por que escolher a Cajueiro Tech?</h2>
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto text-center mb-12 md:mb-16">
+                Oferecemos uma plataforma completa para você aprender, conectar-se e crescer no universo do empreendedorismo.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-12 text-center">
+                <div class="p-6 rounded-lg">
+                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-5 flex items-center justify-center rounded-full bg-teal-400/10">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Conteúdo Inovador</h3>
+                    <p class="text-sm md:text-base text-gray-600">Cursos atualizados com as últimas tendências e metodologias do mercado para startups.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-5 flex items-center justify-center rounded-full bg-teal-400/10">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Mentoria Especializada</h3>
+                    <p class="text-sm md:text-base text-gray-600">Apoio de mentores experientes para guiar sua jornada e superar desafios específicos.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-5 flex items-center justify-center rounded-full bg-teal-400/10">
+                        <svg class="w-8 h-8 md:w-10 md:h-10 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-3.741-5.582M12 15.75a3 3 0 01-3-3m3 3a3 3 0 00-3-3m-3.75 3.75a3 3 0 01-3-3m3 3a3 3 0 00-3-3m9.75 9.75c0-4.994-4.03-9-9-9s-9 4.006-9 9M3.75 21c0-4.994 4.03-9 9-9s9 4.006 9 9" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Comunidade Vibrante</h3>
+                    <p class="text-sm md:text-base text-gray-600">Conecte-se com outros empreendedores, troque ideias e construa uma rede de contatos valiosa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20 lg:py-24 bg-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-5 text-center tracking-tight text-gray-900">Nossos Programas de Capacitação</h2>
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto text-center mb-12 md:mb-16">
+                Trilhas de aprendizado desenhadas para cada momento da sua jornada empreendedora.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col transition-all duration-300 ease-in-out border border-gray-300 hover:transform hover:translate-y-[-6px] hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/4FD1C5/1A202C?text=Startup+One&font=inter" alt="[Imagem do curso Startup One]" class="w-full h-48 sm:h-56 object-cover">
+                    <div class="p-5 md:p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">Startup One</h3>
+                        <p class="text-sm sm:text-base mb-4 flex-grow text-gray-600">Acesso a vídeos de treinamento e apostilas digitais para iniciar sua jornada com o pé direito.</p>
+                        <a href="cursos.html#startup-one" class="mt-auto w-full sm:w-auto text-center font-semibold py-2.5 px-6 rounded-lg transition-colors duration-300 text-sm sm:text-base bg-red-500 text-white hover:bg-red-600 focus:bg-red-600">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col transition-all duration-300 ease-in-out border border-gray-300 hover:transform hover:translate-y-[-6px] hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/6B73FF/FFFFFF?text=Startup+Plus&font=inter" alt="[Imagem do curso Startup Plus]" class="w-full h-48 sm:h-56 object-cover">
+                    <div class="p-5 md:p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-2 text-gray-900">Startup Plus</h3>
+                        <p class="text-sm sm:text-base mb-4                             ...9 9 4.006 9 9s4.006 9 9 9z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Rede de Networking</h3>
+                <p class="text-sm md:text-base text-gray-600">Conecte-se com outros empreendedores, investidores e parceiros estratégicos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-100 py-10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h4 class="text-lg font-semibold mb-3">Cajueiro Tech</h4>
+        <p class="text-sm mb-4">Transformando ideias em negócios de impacto.</p>
+        <div class="flex justify-center space-x-5 mb-4">
+            <a href="#" class="hover:text-teal-400 transition-colors">Instagram</a>
+            <a href="#" class="hover:text-teal-400 transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-teal-400 transition-colors">YouTube</a>
+        </div>
+        <p class="text-xs text-gray-400">&copy; 2025 Cajueiro Tech. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
 </body>
 </html>
