@@ -36,7 +36,7 @@
         /* Estilos personalizados restantes */
         body {
             font-family: 'Inter', sans-serif;
-            /* Padding top do body corrigido na etapa anterior, removendo o conflito */
+            /* Padding top do body corrigido na etapa anterior */
         }
 
         .course-card-image {
@@ -44,10 +44,6 @@
              height: 12rem;
              object-fit: cover;
         }
-
-        /* Removido o CSS para a animação da imagem e o keyframes associado */
-        /* .animate-image-glow, @keyframes pulse-shadow { ... } */
-
 
         /* Animações de slide/fade - manter */
         .fade-in { animation: fadeIn 1s ease-in-out; }
@@ -75,8 +71,7 @@
 </head>
 <body class="bg-white text-text-dark-gray">
 
-    <header class="bg-primary py-4 shadow-lg border-b-2 border-accent fixed top-0 w-full z-50">
-        <div class="container mx-auto px-4 flex justify-between items-center">
+    <header class="bg-gradient-to-r from-primary to-secondary py-4 shadow-lg border-b-2 border-accent fixed top-0 w-full z-50"> <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="index.html" class="text-white text-2xl font-semibold">Cajueiro Tech</a>
             <nav class="hidden md:flex space-x-6 items-center">
                 <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Início</a>
@@ -109,34 +104,42 @@
             <a href="cursos.html" class="bg-accent text-black px-8 py-3 text-lg font-semibold rounded-lg shadow-lg transition-colors duration-300 hover:bg-accent-dark transform hover:-translate-y-0.5 inline-block">Explore Nossos Cursos</a>
         </div>
         <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center fade-in">
-             <img src="imgs/Team-amico.png" alt="Transformação Digital" class="max-w-full h-auto rounded-lg"> </div>
+             <img src="imgs/Team-amico.png" alt="Transformação Digital" class="max-w-full h-auto rounded-lg">
+        </div>
     </section>
 
-    <section class="bg-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-primary text-3xl font-bold text-center mb-4">Por que escolher a Cajueiro Tech?</h2>
-            <p class="text-text-gray-light text-lg text-center mb-12">Conectamos você ao conhecimento e à comunidade para impulsionar seu sucesso.</p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md border border-secondary-light transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl slide-in-left text-center">
-                    <div class="mb-4">
-                         <i class="material-icons text-secondary text-5xl">language</i>
+    <section class="bg-gradient-to-br from-white to-bg-secondary-light py-16"> <div class="container mx-auto px-4">
+            <h2 class="text-primary text-3xl font-bold text-center mb-12">Sobre a Cajueiro Tech</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-md border border-secondary-light">
+                    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                         <i class="material-icons text-secondary text-5xl">flag</i>
                     </div>
-                    <h3 class="text-primary text-xl font-semibold mb-2">Aprendizado Flexível</h3>
-                    <p class="text-text-gray-light">Cursos online adaptados ao seu ritmo, com acesso vitalício.</p>
+                    <div>
+                        <h3 class="font-semibold text-primary text-xl mb-2">Nossa História e Missão:</h3>
+                        <p class="text-text-medium-gray">A Cajueiro Tech nasceu com o propósito de democratizar o acesso ao conhecimento em tecnologia e negócios digitais. Nossa missão é capacitar indivíduos a transformar suas ideias em empreendimentos de sucesso, impulsionando a inovação no mercado brasileiro.</p>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md border border-secondary-light transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl text-center">
-                    <div class="mb-4">
-                        <i class="material-icons text-secondary text-5xl">school</i>
+
+                 <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-md border border-secondary-light">
+                    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                        <i class="material-icons text-secondary text-5xl">visibility</i>
                     </div>
-                    <h3 class="text-primary text-xl font-semibold mb-2">Mentores Experientes</h3>
-                    <p class="text-text-gray-light">Aprenda com profissionais que são referência no mercado digital.</p>
+                    <div>
+                        <h3 class="font-semibold text-primary text-xl mb-2">Nossa Visão:</h3>
+                        <p class="text-text-medium-gray">Temos a visão de ser a principal plataforma de educação empreendedora no Brasil, referência na formação de líderes e inovadores preparados para os desafios do futuro digital.</p>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md border border-secondary-light transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl slide-in-right text-center">
-                    <div class="mb-4">
-                        <i class="material-icons text-secondary text-5xl">group</i>
+
+                 <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-lg shadow-md border border-secondary-light">
+                    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                        <i class="material-icons text-secondary text-5xl">people</i>
                     </div>
-                    <h3 class="text-primary text-xl font-semibold mb-2">Comunidade Engajada</h3>
-                    <p class="text-text-gray-light">Faça networking e troque experiências com outros empreendedores.</p>
+                    <div>
+                        <h3 class="font-semibold text-primary text-xl mb-2">Nosso Público-Alvo:</h3>
+                        <p class="text-text-medium-gray">Nosso público inclui aspirantes a empreendedores, donos de pequenos negócios, profissionais que buscam se reinventar e qualquer pessoa com o desejo de aprender e crescer no universo digital, especialmente aqueles que buscam aplicar a tecnologia para resolver problemas reais e criar valor.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,8 +203,7 @@
     </section>
 
 
-    <footer class="bg-primary py-8 text-white text-center">
-        <div class="container mx-auto px-4">
+    <footer class="bg-gradient-to-r from-primary to-secondary py-8 text-white text-center"> <div class="container mx-auto px-4">
             <a href="index.html" class="text-white text-2xl font-semibold mb-4 inline-block">Cajueiro Tech</a>
             <p class="text-white mb-6">Transformando ideias em realidade. Junte-se à nossa comunidade!</p>
             <div class="flex justify-center space-x-4 text-white text-3xl">
