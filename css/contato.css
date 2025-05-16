@@ -1,28 +1,95 @@
 .screen{
     height: 50vh;
+    border-radius: 1vh;
 }
 .screen2{
-    width: 80%;
+    height: 50vh;
+    width: 150vh;
 }
 @media (max-width: 996px) {
     .flex2{
         display: flex;
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
         gap: 5vh;
+    }
+    #volatil{
+        overflow: scroll;
     }
 }
 .flex2{
     display: flex;
     justify-content: space-between;
 }
-.text-dark-gray{
+.cinza-escuro{
     color: #262626;
 }
-.text-gray-light{
+.cinza-claro{
     color: #e1e2e1;
 }
-.border{
-    border-radius: 1vh;
+.borda{
     height: 20vh;
     width: 30vh;
+    padding: 2vh;
+}
+
+#forms{
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    height: 35px;
+    padding: 0px 10px 0px 10px;
+}
+input:focus{
+    outline: none;
+}
+textarea{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+#enviar{
+    border: none;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #f1be24;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#enviar:hover{
+    background-color: #b29600;
+}
+
+#forms{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: #e1e2e1;
 }
