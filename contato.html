@@ -70,7 +70,7 @@
        }
     </style>
 </head>
-<body>
+<body id="volatil">
 
     <header class="bg-gradient-to-r from-primary to-secondary py-4 shadow-lg border-b-2 border-accent fixed top-0 w-full z-50"> <div class="container mx-auto px-4 flex justify-between items-center">
         <a href="index.html" class="text-white text-2xl font-semibold">Cajueiro Tech</a>
@@ -100,51 +100,81 @@
 
 <section class="bg-gradient-to-br from-bg-secondary-light to-secondary py-20 pt-24 flex flex-col md:flex-row items-center justify-center text-white md:gap-12 screen">
 <div class="container mx-auto px-4 text-center md:w-1/2 fade-in">
-    <h1 class="text-gray-light text-4xl md:text-5xl font-bold leading-tight mb-4">Como você prefere falar com a gente?</h1>
+    <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight mb-4">Como você prefere falar com a gente?</h1>
 </div>
 </section>
 
 <section class="pt-24 flex md:flex-row justify-center text-white">
     
-    <div class="bg-white p-6 rounded-lg shadow-md screen2">
+    <div class="bg-white p-6 rounded-lg screen2">
         <div class="flex2">
 
-            <div class="border transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
+            <div class="borda transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
                 <div >
                      <i class="material-icons text-secondary text-5xl">flag</i>
                 </div>
                 <div>
                     <h3 class="font-semibold text-primary text-xl mb-2">Email:</h3>
                     <p class="text-text-medium-gray">Tem alguma dúvida ou sugestão?</p>
-                    <h3 class="font-semibold text-dark-gray text-xl mb-2">meajudea@cajueiro.com.br</h3>
+                    <h3 class="font-semibold cinza-escuro text-xl mb-2">meajudea@cajueiro.com.br</h3>
                 </div>
             </div>
 
-             <div class="border transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
+             <div class="borda transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
                 <div>
                     <i class="material-icons text-secondary text-5xl">visibility</i>
                 </div>
                 <div>
                     <h3 class="font-semibold text-primary text-xl mb-2">Telefone:</h3>
                     <p class="text-text-medium-gray">Você pode ligar a qualquer hora.</p>
-                    <h3 class="font-semibold text-dark-gray text-xl mb-2">0800 912 1247</h3>
+                    <h3 class="font-semibold cinza-escuro text-xl mb-2">0800 912 1247</h3>
                 </div>
             </div>
 
-             <div class="border transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
+             <a href="#forms" class="borda transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
                 <div>
                     <i class="material-icons text-secondary text-5xl">people</i>
                 </div>
                 <div>
                     <h3 class="font-semibold text-primary text-xl mb-2">Chat:</h3>
                     <p class="text-text-medium-gray">Precisa de uma ajuda agora?.</p>
-                    <h3 class="font-semibold text-dark-gray text-xl mb-2">Basta abrir o chat no app.</h3>
+                    <h3 class="font-semibold cinza-escuro text-xl mb-2">Basta abrir o chat no app.</h3>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
     </div>
+
+</section>
+
+<section id="forms" class="bg-gradient-to-r from-primary to-secondary">
+
+    <main>
+        <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight mb-4">Envie-nos sua preocupação!</h1>
+        <form id="formulario" action="https://formsubmit.co/gian.crelikc@ba.estudante.senai.br" method="POST" onsubmit="return check()">
+            <label for="Nome">Nome completo:</label>
+            <input id="nome" type="text" name="Nome" autocomplete="off">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="Email" autocomplete="off">
+            <label for="message">Escreva uma mensagem:</label>
+            <textarea id="mensagem" name="Mensagem"></textarea><br>
+            <button id="enviar" type="submit">Enviar</button>
+       </form>
+       <script>
+            // Espera o DOM carregar antes de adicionar o listener
+  document.getElementById("formulario").addEventListener("submit", function (event) {
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    if (nome === "" || email === "" || mensagem === "") {
+      alert("Por favor, preencha todos os campos antes de enviar.");
+      event.preventDefault(); // Impede o envio do formulário
+    }
+  });     
+       </script>
+    </main>
 
 </section>
 

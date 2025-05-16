@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Cajueiro Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent': '#f1be24',
+                        'primary': '#1c58a4',
+                        'secondary': '#4882dd',
+                        'bg-light': '#e1e2e1',
+                        'bg-secondary-light': '#a2c5ee',
+                        'accent-dark': '#b29600',
+                        'text-dark-gray': '#2d3748',
+                        'text-medium-gray': '#4a5568',
+                        'text-gray-light': '#6b7280',
+                        'bg-card': '#f7fafc',
+                        'text-footer-light': '#718096',
+                    },
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/sobre.css">
+</head>
+<body class="bg-white text-text-dark-gray">
+
+    <header class="bg-gradient-to-r from-primary to-secondary py-4 shadow-lg border-b-2 border-accent fixed top-0 w-full z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-semibold">Cajueiro Tech</a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Início</a>
+                <a href="sobre.html" class="text-accent font-semibold transition-colors duration-300">Sobre Nós</a>
+                <a href="cursos.html" class="text-white hover:text-accent transition-colors duration-300">Cursos</a>
+                <a href="contato.html" class="bg-accent text-black px-4 py-2 rounded-md transition-colors duration-300 hover:bg-accent-dark transform hover:-translate-y-0.5 inline-block text-sm font-medium">Entre em Contato</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 w-full absolute top-full left-0 shadow-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary">Início</a>
+                <a href="sobre.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary bg-gray-100">Sobre Nós</a>
+                <a href="cursos.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-primary">Cursos</a>
+                <a href="contato.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary hover:bg-secondary text-center">Entre em Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-hero fade-in">
+            <div class="container">
+                <img src="imgs/Logo.png" alt="Logo" class="hero-logo">
+                <h1 class="titulo-hero">Cajueiro Tech</h1>
+                <p class="subtitulo-hero">Descubra como estamos capacitando a próxima geração de inovadores e transformando ideias em realidade.</p>
+            </div>
+        </section>
+
+        <section class="secao-sobre">
+            <div class="container">
+                <h2 class="titulo-secao slide-in-left">Nossa essência...</h2>
+
+                <div class="card-historia slide-in-right">
+                    <div class="conteudo-historia">
+                        <i class="material-icons icone-historia icon-hover-effect">auto_stories</i>
+                        <div>
+                            <h3 class="titulo-historia">Como surgimos</h3>
+                            <p class="texto-historia">
+                                A Cajueiro Tech nasceu da paixão por tecnologia e do desejo de ver mais ideias inovadoras florescendo no Brasil. Percebemos que muitas startups e empreendedores talentosos precisavam de um impulso, de conhecimento prático e direcionado para transformar seus projetos em negócios de impacto. Nosso propósito é ser esse catalisador, oferecendo educação de ponta, mentorias especializadas e uma comunidade vibrante para apoiar cada passo da jornada empreendedora.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-missao-visao">
+                    <div class="card slide-in-bottom">
+                        <div class="card-cabecalho">
+                            <i class="material-icons icone icon-hover-effect">flag</i>
+                            <h3 class="card-titulo">Nossa Missão</h3>
+                        </div>
+                        <p class="card-texto">Capacitar indivíduos e startups com conhecimento tecnológico e habilidades de negócios digitais, fomentando a inovação e o desenvolvimento de soluções que transformam o mercado.</p>
+                    </div>
+                    <div class="card slide-in-bottom" style="animation-delay: 0.2s;">
+                        <div class="card-cabecalho">
+                            <i class="material-icons icone icon-hover-effect">visibility</i>
+                            <h3 class="card-titulo">Nossa Visão</h3>
+                        </div>
+                        <p class="card-texto">Ser a principal referência em educação para startups e empreendedorismo digital no Brasil, reconhecida por impulsionar o sucesso e a inovação de forma acessível e prática.</p>
+                    </div>
+                </div>
+
+                <h3 class="titulo-valores slide-in-left">Nossos Valores Fundamentais</h3>
+                <div class="grid-valores">
+                    <div class="card card-valor hover-lift slide-in-bottom">
+                        <i class="material-icons icone-valor icon-hover-effect">emoji_objects</i>
+                        <h4 class="titulo-valor">Inovação</h4>
+                        <p class="texto-valor">Buscamos constantemente novas formas de ensinar e aprender.</p>
+                    </div>
+                    <div class="card card-valor hover-lift slide-in-bottom" style="animation-delay: 0.1s;">
+                        <i class="material-icons icone-valor icon-hover-effect">groups</i>
+                        <h4 class="titulo-valor">Colaboração</h4>
+                        <p class="texto-valor">Acreditamos no poder da comunidade e do trabalho em equipe.</p>
+                    </div>
+                    <div class="card card-valor hover-lift slide-in-bottom" style="animation-delay: 0.2s;">
+                        <i class="material-icons icone-valor icon-hover-effect">verified</i>
+                        <h4 class="titulo-valor">Excelência</h4>
+                        <p class="texto-valor">Compromisso com a qualidade em tudo que fazemos.</p>
+                    </div>
+                    <div class="card card-valor hover-lift slide-in-bottom" style="animation-delay: 0.3s;">
+                        <i class="material-icons icone-valor icon-hover-effect">trending_up</i>
+                        <h4 class="titulo-valor">Impacto</h4>
+                        <p class="texto-valor">Focamos em gerar resultados positivos e transformadores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-equipe">
+            <div class="container">
+                <h2 class="titulo-secao texto-branco slide-in-left">Conheça Nossa Equipe Dedicada</h2>
+                <div class="grid-equipe">
+                    <div class="card-membro-equipe hover-lift slide-in-bottom">
+                        <img src="imgs/ronyel.png" alt="Foto do Líder" class="foto-membro">
+                        <div class="info-membro">
+                            <h3 class="nome-membro">Ronyel Borges</h3>
+                            <p class="cargo-membro">CEO & Co-fundador</p>
+                            <p class="descricao-membro">Apaixonado por inovação e por ajudar startups a alcançarem seu pleno potencial.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro-equipe hover-lift slide-in-bottom" style="animation-delay: 0.1s;">
+                        <img src="https://placehold.co/400x300/e1e2e1/1c58a4?text=Foto+Líder+2" alt="Foto do Líder 2" class="foto-membro">
+                        <div class="info-membro">
+                            <h3 class="nome-membro">Ana Luiza Santos</h3>
+                            <p class="cargo-membro">Diretora de Educação</p>
+                            <p class="descricao-membro">Especialista em criar experiências de aprendizado engajadoras e eficazes.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro-equipe hover-lift slide-in-bottom" style="animation-delay: 0.2s;">
+                        <img src="https://placehold.co/400x300/f1be24/1c58a4?text=Foto+Líder+3" alt="Foto do Líder 3" class="foto-membro">
+                        <div class="info-membro">
+                            <h3 class="nome-membro">Gian Marco</h3>
+                            <p class="cargo-membro">Coordenador de Comunidade</p>
+                            <p class="descricao-membro">Focado em construir uma comunidade forte e colaborativa.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro-equipe hover-lift slide-in-bottom" style="animation-delay: 0.3s;">
+                        <img src="https://placehold.co/400x300/a2c5ee/1c58a4?text=Foto+Líder+4" alt="Foto do Líder 4" class="foto-membro">
+                        <div class="info-membro">
+                            <h3 class="nome-membro">Marília Beatriz</h3>
+                            <p class="cargo-membro">Especialista em Marketing</p>
+                            <p class="descricao-membro">Criando estratégias para levar a Cajueiro Tech a mais empreendedores.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro-equipe hover-lift slide-in-bottom" style="animation-delay: 0.4s;">
+                        <img src="https://placehold.co/400x300/e1e2e1/1c58a4?text=Foto+Líder+5" alt="Foto do Líder 5" class="foto-membro">
+                        <div class="info-membro">
+                            <h3 class="nome-membro">Talita Amorim</h3>
+                            <p class="cargo-membro">Desenvolvedora Líder</p>
+                            <p class="descricao-membro">Garantindo que nossa plataforma seja robusta e inovadora.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro-equipe hover-lift slide-in-bottom" style="animation-delay: 0.5s;">
+                        <img src="https://placehold.co/400x300/f1be24/1c58a4?text=Foto+Líder+6" alt="Foto do Líder 6" class="foto-membro">
+                        <div class="info-membro">
+                            <h3 class="nome-membro">Silvaney Santos</h3>
+                            <p class="cargo-membro">Mentora Principal</p>
+                            <p class="descricao-membro">Guiando nossos alunos com experiência e dedicação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-porque-escolher">
+            <div class="container">
+                <h2 class="titulo-secao slide-in-right">Por Que Escolher a Cajueiro Tech?</h2>
+                <div class="grid-porque-escolher">
+                    <div class="item-porque-escolher slide-in-bottom">
+                        <div class="wrapper-icone wrapper-icone-hover">
+                            <i class="material-icons icone-grande icone-efeito-hover-interno">school</i>
+                        </div>
+                        <h3 class="titulo-porque-escolher">Metodologia Prática</h3>
+                        <p class="texto-porque-escolher">Cursos focados na aplicação real do conhecimento, para você sair pronto para o mercado.</p>
+                    </div>
+                    <div class="item-porque-escolher slide-in-bottom" style="animation-delay: 0.2s;">
+                        <div class="wrapper-icone wrapper-icone-hover">
+                            <i class="material-icons icone-grande icone-efeito-hover-interno">support_agent</i>
+                        </div>
+                        <h3 class="titulo-porque-escolher">Mentoria Especializada</h3>
+                        <p class="texto-porque-escolher">Acesso a mentores experientes para guiar sua jornada e tirar suas dúvidas.</p>
+                    </div>
+                    <div class="item-porque-escolher slide-in-bottom" style="animation-delay: 0.4s;">
+                        <div class="wrapper-icone wrapper-icone-hover">
+                            <i class="material-icons icone-grande icone-efeito-hover-interno">connect_without_contact</i>
+                        </div>
+                        <h3 class="titulo-porque-escolher">Comunidade Forte</h3>
+                        <p class="texto-porque-escolher">Conecte-se com outros empreendedores, troque ideias e forme parcerias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-primary to-secondary py-8 text-white text-center">
+        <div class="container mx-auto px-4">
+            <a href="index.html" class="text-white text-2xl font-semibold mb-4 inline-block">Cajueiro Tech</a>
+            <p class="text-gray-300 mb-6">Transformando ideias em realidade. Junte-se à nossa comunidade!</p>
+            <div class="flex justify-center space-x-4 text-white text-3xl">
+                <a href="#" target="_blank" aria-label="Website" class="hover:text-accent transition-colors duration-300 icon-social-hover">
+                    <i class="material-icons">public</i>
+                </a>
+                <a href="#" target="_blank" aria-label="Compartilhar" class="hover:text-accent transition-colors duration-300 icon-social-hover">
+                    <i class="material-icons">share</i>
+                </a>
+                <a href="#" target="_blank" aria-label="Link" class="hover:text-accent transition-colors duration-300 icon-social-hover">
+                    <i class="material-icons">link</i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-xs mt-4">© <span id="currentYear"></span> Cajueiro Tech. Todos os direitos reservados.</p>
+            <p class="text-gray-500 text-xs mt-2">Imagens meramente ilustrativas. Conteúdo de placeholder.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuButton.querySelector('svg path');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5");
+            } else {
+                menuIcon.setAttribute('d', "M6 18L18 6M6 6l12 12");
+            }
+        });
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-bottom, .fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animatedElements.forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
