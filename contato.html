@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajueiro Tech - Digital Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/contato.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta de cores fornecida
+                        'accent': '#f1be24', // Amarelo
+                        'primary': '#1c58a4', // Azul Escuro (Usado no header, títulos, rodapé)
+                        'secondary': '#4882dd', // Azul Claro (Usado em ícones, gradientes, bordas)
+                        'bg-light': '#e1e2e1', // Cinza Claríssimo (Usado em backgrounds, menos proeminente)
+                        'bg-secondary-light': '#a2c5ee', // Azul Claro 200 (Usado em backgrounds, gradientes)
+
+                        // Cores adicionais usadas no código original (ajustadas ou mantidas)
+                        'accent-dark': '#b29600', // Amarelo mais escuro (hover)
+                        'text-dark-gray': '#2d3748', // Cinza Escuro (usado onde o contraste com azul/amarelo é alto)
+                        'text-medium-gray': '#4a5568', // Cinza Médio (usado para textos secundários em fundos claros)
+                        'text-gray-light': '#6b7280', // Cinza (usado para subtítulos e descrições em fundos claros)
+                        'bg-card': '#f7fafc', // Fundo card depoimento (pode ser substituído por white)
+                        'text-footer-light': '#718096', // Cor texto rodapé light (ajustada para branco/claro no footer azul)
+                    },
+                     // Mantém as cores padrão do Tailwind além das personalizadas
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Estilos personalizados restantes */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Padding top do body corrigido na etapa anterior */
+        }
+
+        .course-card-image {
+             width: 100%;
+             height: 12rem;
+             object-fit: cover;
+        }
+
+        /* Animações de slide/fade - manter */
+        .fade-in { animation: fadeIn 1s ease-in-out; }
+        .slide-in-left { animation: slideInLeft 0.5s ease-out; }
+        .slide-in-right { animation: slideInRight 0.5s ease-out; }
+        .slide-in-bottom { animation: slideInBottom 0.5s ease-out; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideInBottom {
+           from { transform: translateY(50px); opacity: 0; }
+           to { transform: translateY(0); opacity: 1; }
+       }
+    </style>
+</head>
+<body>
+
+    <header class="bg-gradient-to-r from-primary to-secondary py-4 shadow-lg border-b-2 border-accent fixed top-0 w-full z-50"> <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href="index.html" class="text-white text-2xl font-semibold">Cajueiro Tech</a>
+        <nav class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="text-white hover:text-accent transition-colors duration-300">Início</a>
+            <a href="sobre.html" class="text-white hover:text-accent transition-colors duration-300">Sobre Nós</a>
+            <a href="cursos.html" class="text-white hover:text-accent transition-colors duration-300">Cursos</a>
+            <a href="contato.html" class="bg-accent text-black px-4 py-2 rounded-md transition-colors duration-300 hover:bg-accent-dark transform hover:-translate-y-0.5 inline-block text-sm font-medium">Entre em Contato</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="focus:outline-none text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-50 w-full absolute top-full left-0 shadow-md">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-700">Início</a>
+            <a href="sobre.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-700">Sobre Nós</a>
+            <a href="cursos.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-700">Cursos</a>
+            <a href="contato.html" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 text-center">Entre em Contato</a>
+        </div>
+    </div>
+</header>
+
+<section class="bg-gradient-to-br from-bg-secondary-light to-secondary py-20 pt-24 flex flex-col md:flex-row items-center justify-center text-white md:gap-12 screen">
+<div class="container mx-auto px-4 text-center md:w-1/2 fade-in">
+    <h1 class="text-gray-light text-4xl md:text-5xl font-bold leading-tight mb-4">Como você prefere falar com a gente?</h1>
+</div>
+</section>
+
+<section class="pt-24 flex md:flex-row justify-center text-white">
+    
+    <div class="bg-white p-6 rounded-lg shadow-md screen2">
+        <div class="flex2">
+
+            <div class="border transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
+                <div >
+                     <i class="material-icons text-secondary text-5xl">flag</i>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-primary text-xl mb-2">Email:</h3>
+                    <p class="text-text-medium-gray">Tem alguma dúvida ou sugestão?</p>
+                    <h3 class="font-semibold text-dark-gray text-xl mb-2">meajudea@cajueiro.com.br</h3>
+                </div>
+            </div>
+
+             <div class="border transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
+                <div>
+                    <i class="material-icons text-secondary text-5xl">visibility</i>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-primary text-xl mb-2">Telefone:</h3>
+                    <p class="text-text-medium-gray">Você pode ligar a qualquer hora.</p>
+                    <h3 class="font-semibold text-dark-gray text-xl mb-2">0800 912 1247</h3>
+                </div>
+            </div>
+
+             <div class="border transition-transform duration-300 hover:transform hover:-translate-y-2 hover:shadow-xl">
+                <div>
+                    <i class="material-icons text-secondary text-5xl">people</i>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-primary text-xl mb-2">Chat:</h3>
+                    <p class="text-text-medium-gray">Precisa de uma ajuda agora?.</p>
+                    <h3 class="font-semibold text-dark-gray text-xl mb-2">Basta abrir o chat no app.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</section>
+
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = mobileMenuButton.querySelector('svg path'); // Seleciona o path dentro do SVG
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        // Alterna o ícone entre menu e fechar
+        if (mobileMenu.classList.contains('hidden')) {
+            menuIcon.setAttribute('d', "M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"); // Ícone de menu
+        } else {
+            menuIcon.setAttribute('d', "M6 18L18 6M6 6l12 12"); // Ícone de fechar (X)
+        }
+    });
+
+   document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
