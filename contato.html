@@ -152,15 +152,28 @@
 
     <main>
         <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight mb-4">Envie-nos sua preocupação!</h1>
-        <form action="https://formsubmit.co/gian.crelikc@ba.estudante.senai.br" method="POST">
+        <form id="formulario" action="https://formsubmit.co/gian.crelikc@ba.estudante.senai.br" method="POST" onsubmit="return check()">
             <label for="Nome">Nome completo:</label>
-            <input type="text" name="Nome" autocomplete="off" required>
+            <input id="nome" type="text" name="Nome" autocomplete="off">
             <label for="email">Email:</label>
-            <input type="email" name="Email" autocomplete="off" required>
+            <input id="email" type="email" name="Email" autocomplete="off">
             <label for="message">Escreva uma mensagem:</label>
-            <textarea name="Mensagem"></textarea><br>
+            <textarea id="mensagem" name="Mensagem"></textarea><br>
             <button id="enviar" type="submit">Enviar</button>
        </form>
+       <script>
+            // Espera o DOM carregar antes de adicionar o listener
+  document.getElementById("formulario").addEventListener("submit", function (event) {
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    if (nome === "" || email === "" || mensagem === "") {
+      alert("Por favor, preencha todos os campos antes de enviar.");
+      event.preventDefault(); // Impede o envio do formulário
+    }
+  });     
+       </script>
     </main>
 
 </section>
