@@ -50,10 +50,10 @@ main {
     padding-top: 4rem;
     padding-bottom: 4rem;
     color: white;
-    text-align: center; /* Centraliza texto e elementos inline/inline-block */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o contêiner .container dentro da seção */
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -65,10 +65,10 @@ main {
 
 /* Logo Hero */
 .hero-logo {
-    display: block; /* Trata a imagem como um bloco para centralização */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-    margin-bottom: 1.5rem; /* mb-6 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
     height: 6rem;
     border-radius: 0.375rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -77,7 +77,7 @@ main {
 @media (min-width: 768px) {
     .hero-logo {
         height: 8rem;
-        margin-bottom: 1.5rem; /* md:h-32 */
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -109,7 +109,6 @@ main {
         font-size: 1.25rem;
     }
 }
-
 
 /* Seção Sobre Nós (Essência) */
 .secao-sobre {
@@ -357,6 +356,25 @@ main {
     }
 }
 
+/* Estilo para a nova imagem de destaque da equipe */
+.imagem-destaque-equipe {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.imagem-destaque-equipe img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .grid-equipe {
     display: grid;
     gap: 2rem;
@@ -388,7 +406,7 @@ main {
 .foto-membro {
     width: 100%;
     height: 14rem;
-    
+    object-fit: cover; /* Garante que a imagem cubra a área mantendo a proporção */
 }
 
 @media (min-width: 768px) {
@@ -494,7 +512,6 @@ main {
     margin-bottom: 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: background-color 0.3s ease;
-    cursor: default;
 }
 
 .wrapper-icone-hover:hover {
@@ -523,8 +540,6 @@ main {
     }
 }
 
-/* Animações de entrada - Ajustadas para evitar animação dupla */
-/* Define apenas o estado inicial */
 .fade-in {
     opacity: 0;
 }
@@ -591,7 +606,7 @@ main {
     transform: scale(1.15);
 }
 
-/* Para ícones dentro de wrappers, como na seção "Por que escolher" */
+/* Para ícones dentro de wrappers, como na seção "Por Que Escolher" */
 .wrapper-icone-hover {
     transition: background-color 0.3s ease;
 }
