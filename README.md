@@ -1,4 +1,3 @@
-# app-cajueiro
 # Projeto Cajueiro Tech
 
 ## Visão Geral
@@ -31,7 +30,6 @@ O escopo original do projeto previa as seguintes seções/páginas:
     * Cada curso apresentado em cards ou seções visuais atrativas.
 4.  **Formulário de Contato:**
     * Campos para Nome, E-mail, Assunto e Mensagem.
-    * (Originalmente, a implementação funcional em PHP era um desafio proposto).
 
 ## Tecnologias Utilizadas (Nesta Implementação)
 
@@ -50,7 +48,7 @@ O escopo original do projeto previa as seguintes seções/páginas:
 ## Funcionalidades Implementadas (Página Inicial - `index.html`)
 
 * **Design Responsivo:** O site se adapta a diferentes tamanhos de tela (desktop, tablet e mobile).
-* **Paleta de Cores Moderna:** Utilização de tons de azul suaves com um laranja vibrante para acentos.
+* **Paleta de Cores Moderna:** Utilização de tons de azul com amarelo vibrante para acentos.
 * **Cabeçalho Fixo e Interativo:**
     * Logo.
     * Navegação principal para desktop.
@@ -68,21 +66,3 @@ O escopo original do projeto previa as seguintes seções/páginas:
 * **Rodapé:** Com informações de copyright e links para redes sociais (exemplo).
 * **Imagens Placeholder:** Utilizadas para simular o conteúdo visual.
 
-## Como Executar
-
-1.  Clone este repositório (se aplicável) ou salve o arquivo `index.html`.
-2.  Abra o arquivo `index.html` em qualquer navegador web moderno.
-
-Não há dependências de back-end ou processos de build complexos para esta versão da página inicial.
-
-## Próximos Passos (Sugestões)
-
-* Desenvolver as demais páginas do site (Sobre, Cursos, Contato).
-* Integrar um sistema de back-end para o formulário de contato (se desejado).
-* Substituir imagens placeholder por imagens finais e otimizadas.
-* Refinar as animações e interações.
-* Realizar testes de usabilidade e acessibilidade.
-
----
-
-Este README fornece uma visão geral do projeto Cajueiro Tech e da sua implementação atual.
