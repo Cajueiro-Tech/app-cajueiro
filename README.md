@@ -43,8 +43,6 @@ O escopo original do projeto previa as seguintes seções/páginas:
     * Manipulação do DOM para interatividade (ex: menu mobile).
     * `IntersectionObserver` para animações de entrada ao rolar a página.
 
-*(Nota: A solicitação original do professor incluía o uso preferencial de Bootstrap e a implementação de um formulário de contato funcional em PHP. Esta versão do projeto focou em HTML, Tailwind CSS e JavaScript para a interface, conforme iterações posteriores com o solicitante do desenvolvimento.)*
-
 ## Funcionalidades Implementadas (Página Inicial - `index.html`)
 
 * **Design Responsivo:** O site se adapta a diferentes tamanhos de tela (desktop, tablet e mobile).
@@ -64,5 +62,7 @@ O escopo original do projeto previa as seguintes seções/páginas:
     * Efeitos de `hover` em elementos interativos.
     * Animações de entrada para elementos das seções conforme o usuário rola a página.
 * **Rodapé:** Com informações de copyright e links para redes sociais (exemplo).
-* **Imagens Placeholder:** Utilizadas para simular o conteúdo visual.
+
+![image](https://github.com/user-attachments/assets/1e4165b2-d76b-4b6e-a484-650aece1f96c)
+
 
